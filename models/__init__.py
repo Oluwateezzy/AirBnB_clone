@@ -1,2 +1,3 @@
 #!/usr/bin/env python3
-""" init class """
+""" initialize module """
+from base_model import BaseModel
