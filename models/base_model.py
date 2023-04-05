@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ BaseModel """
 import uuid
 from datetime import datetime
