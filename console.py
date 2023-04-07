@@ -101,11 +101,11 @@ class HBNBCommand(cmd.Cmd):
             print("** instance id missing **")
             return
         else:
-            key = arg[0] + "." + arg[1]
+            key = arg[0] + '.' + arg[1]
             if key in storage.all():
                 if len(arg) > 2:
                     if len(arg) == 3:
-                        print("** value missing **")
+                        print('** value missing **')
                     else:
                         setattr(
                             storage.all()[key],
@@ -113,9 +113,9 @@ class HBNBCommand(cmd.Cmd):
                             arg[3][1:-1])
                         storage.all()[key].save()
                 else:
-                    print("** attribute name missing **")
+                    print('** attribute name missing **')
             else:
-                print("** no instance found **")
+                print('** no instance found **')
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
