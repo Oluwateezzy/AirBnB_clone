@@ -91,10 +91,11 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update(self, arg):
         """ update an instances """
+        arg =  arg.split()
         if len(arg) == 0:
             print("** class name missing **")
             return
-        elif arg.split()[0] not in self.classes:
+        elif arg[0] not in self.classes:
             print("** class doesn't exist **")
             return
         elif len(arg) == 1:
@@ -116,6 +117,5 @@ class HBNBCommand(cmd.Cmd):
                     print('** attribute name missing **')
             else:
                 print('** no instance found **')
-
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
