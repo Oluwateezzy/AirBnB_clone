@@ -10,7 +10,7 @@ from models.user import User
 from models.city import City
 from models.state import State
 from models.amenity import Amenity
-from models.reviews import Reviews
+from models.review import Review
 from models.place import Place
 
 
@@ -20,7 +20,7 @@ class HBNBCommand(cmd.Cmd):
     classes =  {'BaseModel': BaseModel, 'User': User,
                 'City': City, 'State': State,
                 'Place': Place, 'Amenity': Amenity,
-                'Reviews': Reviews}
+                'Review': Review}
 
     def do_quit(self, arg):
         """ quit program """
